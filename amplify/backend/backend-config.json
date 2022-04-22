@@ -24,5 +24,28 @@
         ]
       }
     }
+  },
+  "function": {
+    "amplifyappbf8eef19": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {
+    "apib8302c5a": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "amplifyappbf8eef19",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    }
   }
 }

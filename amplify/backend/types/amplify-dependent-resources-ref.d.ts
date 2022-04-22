@@ -9,5 +9,20 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientIDWeb": "string",
             "AppClientID": "string"
         }
+    },
+    "function": {
+        "amplifyappbf8eef19": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string"
+        }
+    },
+    "api": {
+        "apib8302c5a": {
+            "RootUrl": "string",
+            "ApiName": "string",
+            "ApiId": "string"
+        }
     }
 }
